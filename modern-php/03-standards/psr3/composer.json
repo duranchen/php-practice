@@ -1,0 +1,7 @@
+{
+    "require": {
+        "monolog/monolog": "^1.21",
+        "guzzle/guzzle": "v3.9.3",
+        "phpunit/phpunit": "5.5.4"
+    }
+}

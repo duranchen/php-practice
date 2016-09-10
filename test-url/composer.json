@@ -1,0 +1,5 @@
+{
+    "require": {
+        "duranchen/scanner": "^1.0"
+    }
+}

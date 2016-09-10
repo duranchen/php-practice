@@ -1,0 +1,10 @@
+{
+  "require": {
+    "willdurand/geocoder": "^3.3"
+  },
+  "autoload": {
+    "classmap": [
+      "."
+    ]
+  }
+}

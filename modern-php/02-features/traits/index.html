@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(
+                function () {
+                    $("#address-button").click(function () {
+                        var address = $("#address-text").val();
+                        $.ajax({
+                            url: "ajax_index.php",
+                            method: "POST",
+                            data: {
+                                address: address
+                            },
+                            success: function (result) {
+                                $("#location").html(result);
+                            }
+                        })
+                    })
+
+                }
+        )
+    </script>
+    <title></title>
+</head>
+<body>
+
+<label>Address</label>
+<input id='address-text' type="text" name="address" size="50">
+<input id='address-button' type="submit" name="submit">
+
+<div id="location"></div>
+
+</body>
+</html>
