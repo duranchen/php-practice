@@ -6,5 +6,5 @@
 # User-speci
 /.idea/
 .travis.yml
-
-
+/profiler/
+/logs/
